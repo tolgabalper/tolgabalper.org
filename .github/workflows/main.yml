@@ -6,6 +6,8 @@ jobs:
   check:
     runs-on: ubuntu-22.04
 
+    env: "RELEASE_MESSAGE" = 1
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,9 +24,9 @@ jobs:
       - name: Set outputs
         run: |   # Use a multi-line string
           if [[ ${{ steps.is-release-required.outputs }} =~ true ]]; then
-            echo "RELEASE_MESSAGE=deploy" >> .github/.env
+            echo "RELEASE_MESSAGE=deploy" >> $GITHUB_ENV
           else
-            echo "RELEASE_MESSAGE=dont-deploy" >> .github/.env
+            echo "RELEASE_MESSAGE=dont-deploy" >> $GITHUB_ENV
           fi
 
   build:
@@ -34,7 +36,7 @@ jobs:
       matrix:
         node-version: [22.x]
 
-    if: env.RELEASE_MESSAGE == 'deploy'
+    if: ${{RELEASE_MESSAGE}} == 'deploy'
 
     steps:
       - uses: actions/checkout@v4
