@@ -3,11 +3,6 @@ name: Netlify Testing
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - "src/*"
-      - "*.mjs"
-      - "*.json"
-      - "*.yaml"
   pull_request:
     branches: [ "main" ]
 
