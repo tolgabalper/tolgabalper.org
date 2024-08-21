@@ -8,13 +8,17 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
-  pages: write
+  actions: write
+  contents: write
   id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      id-token: write
     steps:
       - uses: fntsrlike/action-netlify-deploy@v2
         with: 
