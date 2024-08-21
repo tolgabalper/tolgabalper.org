@@ -1,14 +1,41 @@
 name: Build and Deploy to Netlify
 on:
   push:
-  pull_request:
 jobs:
-  build:
+
+  check:
     runs-on: ubuntu-22.04
-    
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check commit for release conditions
+        id: is-release-required
+        uses: steviemul/commit-conditions@v1.0.0
+        with:
+          success-commit-message: '(deploy)'
+          fail-commit-message: '(no deploy)'
+          excludes: >
+            .github/workflows/*.yml,
+            README.md
+
+      - name: Set outputs
+        run: |   # Use a multi-line string
+          if [[ ${{ steps.is-release-required.outputs }} =~ true ]]; then
+            echo "::set-output name=release_message::deploy"
+          else
+            echo "::set-output name=release_message::no deploy"
+          fi
+
+  build:
+    needs: check
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [22.x]
+
+    if: needs.check.outputs.release_message == 'deploy'
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,6 +47,9 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Check Release Required
+        run: |
+          ${{ steps.is-release-required.outputs.result }}
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
