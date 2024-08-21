@@ -6,8 +6,6 @@ jobs:
   check:
     runs-on: ubuntu-22.04
 
-    env: "RELEASE_MESSAGE" = 1
-
     steps:
       - uses: actions/checkout@v4
 
