@@ -22,9 +22,9 @@ jobs:
       - name: Set outputs
         run: |   # Use a multi-line string
           if [[ ${{ steps.is-release-required.outputs }} =~ true ]]; then
-            echo "RELEASE_MESSAGE=deploy" >> .github/outputs.env
+            echo "RELEASE_MESSAGE=deploy" >> .github/.env
           else
-            echo "RELEASE_MESSAGE=dont-deploy" >> .github/outputs.env
+            echo "RELEASE_MESSAGE=dont-deploy" >> .github/.env
           fi
 
   build:
