@@ -33,6 +33,8 @@ jobs:
       matrix:
         node-version: [22.x]
 
+    if: needs.check.outputs.result == 'true'
+
     steps:
       - uses: actions/checkout@v4
 
