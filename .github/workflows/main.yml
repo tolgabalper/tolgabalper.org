@@ -25,6 +25,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run astro check
-    - run: npm run build
-    - name: Branch Creator           
-      uses: VentFinance/branch_creator@v1.0.0
+    - run: npm run astro build
