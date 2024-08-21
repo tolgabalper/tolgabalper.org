@@ -24,7 +24,7 @@ jobs:
           if [[ ${{ steps.is-release-required.outputs }} =~ true ]]; then
             echo "RELEASE_MESSAGE=deploy" >> .github/outputs.env
           else
-            echo "RELEASE_MESSAGE=no-deploy" >> .github/outputs.env
+            echo "RELEASE_MESSAGE=dont-deploy" >> .github/outputs.env
           fi
 
   build:
