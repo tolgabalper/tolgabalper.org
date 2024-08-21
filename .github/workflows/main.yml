@@ -24,8 +24,6 @@ jobs:
         run: |   # Use a multi-line string
           if [[ ${{ steps.is-release-required.outputs }} == true ]]; then
             echo "deploying"
-          else
-            echo "NO"
           fi
 
   build:
