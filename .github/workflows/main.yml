@@ -21,9 +21,8 @@ jobs:
 
       - name: Set outputs
         run: |   # Use a multi-line string
-          if [[ ${{ steps.is-release-required.outputs }} =~ true ]]; then
+          if [[ ${{ steps.is-release-required.outputs }} == true ]]; then
             echo "deploying"
-            ${{jobs.build}}
           else
             echo "NO"
           fi
