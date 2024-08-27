@@ -2,7 +2,7 @@
 
 Built with Astro.
 
-[tolgabalper.org](https;//tolgabalper.org)
+[https://tolgabalper.org](https;//www.tolgabalper.org)
 
 ___
 Blog posts are licenced under CC BY-SA
