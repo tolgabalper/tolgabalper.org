@@ -1,12 +1,11 @@
 name: Build and Deploy to Netlify
 on:
   push:
-    branches:
-      - '!refs/pull/*'
   workflow_dispatch:
 jobs:
 
   check:
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-22.04
 
     steps:
@@ -29,13 +28,12 @@ jobs:
           fi
 
   build:
+    if: needs.check.outputs.result == 'true' && github.actor != 'dependabot[bot]'
     needs: check
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [22.x]
-
-    if: needs.check.outputs.result == 'true'
 
     steps:
       - uses: actions/checkout@v4
@@ -66,3 +64,11 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+
+  dependabot-success:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Dependabot detected, skipping jobs
+        run: echo "Dependabot detected, skipping jobs"
