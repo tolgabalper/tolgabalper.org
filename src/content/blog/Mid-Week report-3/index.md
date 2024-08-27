@@ -20,7 +20,7 @@ date: "08/28/2024"
 
 ## <center> What I have tried new </center>
 
-1. Using Termux to edit and add content to this site.7
+1. Using Termux to edit and add content to this site.
 
 ## <center> What I have listened </center>
 
