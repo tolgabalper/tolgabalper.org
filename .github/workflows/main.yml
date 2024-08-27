@@ -28,7 +28,7 @@ jobs:
           fi
 
   build:
-    if: needs.check.outputs.result == 'true' && github.actor != 'dependabot[bot]'
+    if: needs.check.outputs.result == 'true' && github.actor != 'dependabot[bot]' || github.event_name == 'workflow_dispatch'
     needs: check
     runs-on: ubuntu-22.04
     strategy:
