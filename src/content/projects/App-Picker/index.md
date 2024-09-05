@@ -1,6 +1,6 @@
 ---
 title: "App-Picker"
-description: "Python based Bulk App Downloader"
+description: "Python based Bulk App Downloader "
 date: "Sep 5 2024"
 draft: false
 repoURL: "https://github.com/tolgabalper/App-Picker"
