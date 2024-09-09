@@ -24,8 +24,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(astro@4.15.2(rollup@4.21.2)(typescript@5.5.4))(tailwindcss@3.4.1)
       '@fontsource/inter':
-        specifier: ^5.0.17
-        version: 5.0.17
+        specifier: ^5.0.21
+        version: 5.0.21
       '@fontsource/lora':
         specifier: ^5.0.18
         version: 5.0.18
@@ -416,8 +416,8 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@fontsource/inter@5.0.17':
-    resolution: {integrity: sha512-2meBGx1kt7u5LwzGc5Sz5rka6ZDrydg6nT3x6Wkt310vHXUchIywrO8pooWMzZdHYcyFY/cv4lEpJZgMD94bCg==}
+  '@fontsource/inter@5.0.21':
+    resolution: {integrity: sha512-Y4Ph0bYD5IfW8r9PSeiNjLvM6D/Bh5+YT9jOKiBqW3YS+AEBlmy8v74TpTNeZAvL3zHmikHCnzaKw7ob8LZiKQ==}
 
   '@fontsource/lora@5.0.18':
     resolution: {integrity: sha512-O+b7mxQcQXFV8j9RJNb86IV5OOKmDBe9X3URqVqWyadFa5TXsXW1HTSZZCsuJd8Nd7r66b1rzr/GfPiu1WXFYA==}
@@ -3527,7 +3527,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@fontsource/inter@5.0.17': {}
+  '@fontsource/inter@5.0.21': {}
 
   '@fontsource/lora@5.0.18': {}
 
