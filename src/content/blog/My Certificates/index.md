@@ -22,14 +22,14 @@ I had informed my teacher about the contest and helped for doing it for first ti
 
 ## Certificate of Participation [NASA Space Apps Challenge Corum 2023](https://www.spaceappschallenge.org/2023/find-a-team/astraeus/)
 ### Hackathon, October 2023
-There were around 100 teams, only ~80 of them have submitted a project and this number is downed to 27. Some of them shared same rank and ss team (Astraeus) we ranked 5th in total of 27 teams out of.
+There were around 100 teams, only ~80 of them have submitted a project and this number is downed to 27. Some of them shared same rank and as team (Astraeus) we ranked 5th in total of 27 teams out of.
 [Results](/SPACE_APPS_SONUC.pdf)
 
 ## DELE (Diploma de Español como Lengua Extranjera) A1
 ### Spanish, May 2023
 I entered to DELE A1 Escolares and passed at first time.
 
-## Certificate of Distinction [Cayley Contest](https://www.cemc.uwaterloo.ca/contests/past_contests/2023/2023PascalContest.pdf)
+## Certificate of Distinction [Pascal Contest](https://www.cemc.uwaterloo.ca/contests/past_contests/2023/2023PascalContest.pdf)
 ### Mathematics, 2023
 I ranked in the top 25% contestant.
 
