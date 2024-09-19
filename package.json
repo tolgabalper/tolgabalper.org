@@ -26,7 +26,7 @@
     "astro": "^4.15.5",
     "clsx": "^2.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-astro": "^1.2.4",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "sharp": "^0.33.5",
     "tailwind-merge": "^2.2.2",
