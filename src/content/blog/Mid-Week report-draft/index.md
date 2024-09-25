@@ -2,6 +2,7 @@
 title: "Mid-Week report #Draft"
 description: "Mid-Week report by Tolga B. Alper #Draft"
 date: "09/18/2024"
+draft: true
 ---
 
 *__09/11/2024 - 09/18/2024__*
