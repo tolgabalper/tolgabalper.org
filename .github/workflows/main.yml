@@ -1,35 +1,8 @@
 name: Build and Deploy to Netlify
 on:
-  push:
   workflow_dispatch:
 jobs:
-
-  check:
-    if: github.actor != 'dependabot[bot]'
-    runs-on: ubuntu-22.04
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check commit for release conditions
-        id: is-release-required
-        uses: steviemul/commit-conditions@v1.0.0
-        with:
-          success-commit-message: '(deploy)'
-          fail-commit-message: '(no deploy)'
-          excludes: >
-            .github/workflows/*.yml,
-            README.md
-
-      - name: Set outputs
-        run: |   # Use a multi-line string
-          if [[ ${{ steps.is-release-required.outputs }} == true ]]; then
-            echo "deploying"
-          fi
-
   build:
-    if: needs.check.outputs.result == 'true' && github.actor != 'dependabot[bot]' || github.event_name == 'workflow_dispatch'
-    needs: check
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -46,9 +19,6 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Check Release Required
-        run: |
-          ${{ steps.is-release-required.outputs.result }}
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
@@ -64,11 +34,3 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
-
-  dependabot-success:
-    if: github.actor == 'dependabot[bot]'
-    runs-on: ubuntu-22.04
-
-    steps:
-      - name: Dependabot detected, skipping jobs
-        run: echo "Dependabot detected, skipping jobs"
