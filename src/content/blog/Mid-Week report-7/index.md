@@ -1,7 +1,7 @@
 ---
 title: "Mid-Week report #7"
 description: "Mid-Week report by Tolga B. Alper #7"
-date: "09/18/2024"
+date: "09/25/2024"
 ---
 
 *__09/18/2024 - 09/25/2024__*

@@ -1,7 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-const sanitizeHtml = require("sanitize-html");
+import sanitizeHtml from "sanitize-html";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));

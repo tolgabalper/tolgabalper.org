@@ -25,4 +25,4 @@ date: "08/14/2024"
 
 ## <center> What I have tried new </center>
 
-1. RTL-SDR combined with dump1090. [Read at here](./rtl-sdr--dump1090)
+1. RTL-SDR combined with dump1090. [Read at here](/blog/rtl-sdr--dump1090)
