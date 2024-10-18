@@ -42,7 +42,7 @@ importers:
         specifier: ^7.3.1
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       astro:
-        specifier: ^4.15.9
+        specifier: ^4.16.6
         version: 4.16.6(rollup@4.24.0)(typescript@5.6.3)
       clsx:
         specifier: ^2.1.0
