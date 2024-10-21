@@ -48,7 +48,7 @@ importers:
         specifier: ^2.1.0
         version: 2.1.1
       cookie:
-        specifier: '>=0.7.0'
+        specifier: '>=1.0.1'
         version: 1.0.1
       eslint:
         specifier: ^8.57.1
