@@ -5,7 +5,7 @@ date: "11/27/2024"
 
 ---
 
-## <center> Message from blogger </center>
+## <center> Message from author </center>
 
 Sorry for the huge gap between the reports. I was busy with my exams and I had to make a trip to Istanbul. To compensate for the gap, I will write a blog post about my trip to Istanbul, VFS Global experience, and one about my thoughts on a paradox/problem.
 
