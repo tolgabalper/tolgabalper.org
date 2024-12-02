@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.9.3
+        specifier: ^0.9.4
         version: 0.9.4(typescript@5.6.3)
       '@astrojs/mdx':
         specifier: ^3.1.7
