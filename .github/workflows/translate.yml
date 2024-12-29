@@ -22,7 +22,7 @@ jobs:
       - name: DeepL Translate Github Action
         uses: lyqht/deepl-translate-github-action@v2.1.1
         with:
-          target_languages: en,tr
+          target_languages: es,tr
           input_file_path: src/content/blog/Traffic-Accident/index.md
           output_file_name_pattern: src/content/blog/Traffic-Accident/{language}.md
           deepl_api_key: ${{ secrets.DEEPL_AUTH_KEY }}
