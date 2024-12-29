@@ -6,6 +6,19 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+          
+      - name: Install Yarn
+        run: npm install -g yarn
+        
+      - name: Verify Yarn Installation
+        run: yarn --version
       - name: DeepL Translate Github Action
         uses: lyqht/deepl-translate-github-action@v2.1.1
         with:
