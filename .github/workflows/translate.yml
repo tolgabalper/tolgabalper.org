@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    runs-on: tolgabalper.org-selfrunner-1
+    runs-on: self-hosted
     steps:
       - name: DeepL Translate Github Action
         uses: lyqht/deepl-translate-github-action@v2.1.1
