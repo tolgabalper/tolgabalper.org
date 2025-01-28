@@ -2,9 +2,9 @@ import type { APIRoute } from "astro";
 
 const robotsTxt = `
 User-agent: Googlebot
-Disallow: 
+Allow: 
 User-agent: googlebot-mobile
-Disallow: 
+Allow: 
 User-agent: ia_archiver
 Disallow: 
 User-agent: *
