@@ -32,6 +32,75 @@ const work = await Promise.all(
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
+    <section>
+      <div class="animate font-semibold text-white bg-black rounded-md align-middle text-center text-bold text-lg p-5 m-5">
+        <h2>Time passed after beloved <em class="underline"><Link href="">Simay</Link></em> become angel.</h3>
+        <h3>29/12/2025 + <span id="simay-timer">♾️</span></h4>
+        <script>
+  function initTimer() {
+    const simayElement = document.getElementById("simay-timer");
+    
+    if (!simayElement) {
+      console.warn("simay-timer element not found");
+      return;
+    }
+    
+    const startDate = new Date('2025-12-29 15:05');
+    
+    function updateTimer() {
+    try{
+      if (!simayElement) return;
+      
+      let diff = new Date().getTime() - startDate.getTime();
+      
+      const year = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
+      diff -= year * (365.25 * 24 * 60 * 60 * 1000);
+      
+      const month = Math.floor(diff / (30.44 * 24 * 60 * 60 * 1000));
+      diff -= month * (30.44 * 24 * 60 * 60 * 1000);
+      
+      const week = Math.floor(diff / (7 * 24 * 60 * 60 * 1000));
+      diff -= week * (7 * 24 * 60 * 60 * 1000);
+      
+      const day = Math.floor(diff / (24 * 60 * 60 * 1000));
+      diff -= day * (24 * 60 * 60 * 1000);
+      
+      const hour = Math.floor(diff / (60 * 60 * 1000));
+      diff -= hour * (60 * 60 * 1000);
+      
+      const minute = Math.floor(diff / (60 * 1000));
+
+      const parts = [];
+      if (year > 0) parts.push(`${year}years`);
+      if (month > 0) parts.push(`${month}months`);
+      if (week > 0) parts.push(`${week}weeks`);
+      if (day > 0) parts.push(`${day}days`);
+      if (hour >= 0) parts.push(`${hour}hours`);
+      if (minute >= 0) parts.push(`${minute}minutes`);
+      
+      simayElement.textContent = parts.length > 0 ? parts.join(' ') : '0h';
+    } catch(error){
+      console.error("Time update eror:", error);
+      if(!simayElement){
+        return
+      }
+      simayElement.textContent = '♾️';
+    } }
+    
+    
+    updateTimer();
+    setInterval(updateTimer, 60000);
+  }
+  
+  // DOM ready olana kadar bekle
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTimer);
+  } else {
+    initTimer();
+  } 
+  </script>
+      </div>
+    </section>
     <h4 class="animate font-semibold text-black dark:text-white">
       Hi, I'm Tolga <span class="text-xl">👋🏻</span>
     </h4>

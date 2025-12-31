@@ -1,3 +1,5 @@
+Goodbye beloved Simay, Hope we can meet again in another universe. Hoşçakal miniğim, Başka bir evrende görüşmek üzere.
+___
 # Tolgabalper.org
 
 Built with Astro.
