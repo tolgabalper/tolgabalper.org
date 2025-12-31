@@ -9,18 +9,20 @@ draft: false
 
 Life stopped after you passed away. I hope we will meet again in another universe my little.
 
-<img href="https://tolgabalper.org/Simay/Simay1.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay2.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay3.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay4.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay5.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay6.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay7.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay8.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay9.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay10.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay11.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay12.jpg"></img>
-<img href="https://tolgabalper.org/Simay/Simay13.jpg"></img>
+<div class="">
+<img src="/Simay/Simay1.jpg" class="m-10"></img>
+<img src="/Simay/Simay2.jpg" class="m-10"></img>
+<img src="/Simay/Simay3.jpg" class="m-10"></img>
+<img src="/Simay/Simay4.jpg" class="m-10"></img>
+<img src="/Simay/Simay5.jpg" class="m-10"></img>
+<img src="/Simay/Simay6.jpg" class="m-10"></img>
+<img src="/Simay/Simay7.jpg" class="m-10"></img>
+<img src="/Simay/Simay8.jpg" class="m-10"></img>
+<img src="/Simay/Simay9.jpg" class="m-10"></img>
+<img src="/Simay/Simay10.jpg" class="m-10"></img>
+<img src="/Simay/Simay11.jpg" class="m-10"></img>
+<img src="/Simay/Simay12.jpg" class="m-10"></img>
+<img src="/Simay/Simay13.jpg" class="m-10"></img>
+</div>
 
 [^Note]: &copy; 2025 - Present | Tolga Boran Alper All Rights Reserved.
